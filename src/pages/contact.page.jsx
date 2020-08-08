@@ -1,23 +1,22 @@
 
-
 import React from 'react'
 
 import './contact.style.scss'
 
 import NavBar from '../components/navbar/navbar.component'
 const Contact = () => (
-    <>
+  <>
     <NavBar/>
     <div className="baner">
-        <div className="slogan">
-            <div className="contact">
-                <h3>Do you have any suggestion, concerns or feedback?</h3>
-                <h5>Do not hasitate any second! We are thrilled to hear from you!</h5>
-                <h5><a href="mailto:support@capua.store">Contact Us:</a> support@capua.store</h5>
-            </div>
+      <div className="slogan">
+        <div className="contact">
+          <h3>Do you have any suggestion, concerns or feedback?</h3>
+          <h5>Do not hasitate any second! We are thrilled to hear from you!</h5>
+          <h5><a href="mailto:support@capua.store">Contact Us:</a> support@capua.store</h5>
         </div>
+      </div>
     </div>
-   {/* <div className="App">
+    {/* <div className="App">
    <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
     <div className="form-group">
         <label htmlFor="name">Name</label>
@@ -34,7 +33,7 @@ const Contact = () => (
     <button type="submit" className="btn btn-primary">Submit</button>
     </form>
     </div>     */}
-    </>
+  </>
 )
 
-export default Contact;
+export default Contact

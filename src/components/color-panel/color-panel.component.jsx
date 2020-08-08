@@ -1,29 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-import './color-panel.component.scss' 
-
-
+import './color-panel.component.scss'
 
 class Color extends React.Component {
+  constructor (colors) {
+    super(colors)
+    this.state = {
+      colors: this.props.colors
+    }
+  }
 
-    constructor(colors){
-        super(colors);
-        this.state = {
-            colors: this.props.colors
+  render () {
+    return (
+      <div className='colorPanel'>
+        {
+          this.state.colors.map((color) =>
+            <div key={color} className='colorRadius' style={{ backgroundColor: color }}></div>)
         }
-    }
-
-    render(){
-        return(
-                <div className='colorPanel'>
-                {
-                    this.state.colors.map((color) => 
-                    <div key={color} className='colorRadius' style={{backgroundColor: color}}></div>)
-                }
-                </div>
-        )
-
-    }
+      </div>
+    )
+  }
 }
 
-export default Color;
+export default Color
