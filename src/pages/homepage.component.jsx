@@ -33,10 +33,9 @@ class HomePage extends React.Component {
                 <h5 className="slogan"> Technical developments<br/>for comfortable physical activities</h5>
               </div>
               <div className="photoRight">
-                <img src="" alt="" className="right"/>
-              </div>
-              <div className="banner-img" >
-                <img className="banner-img" src={banner} alt="Travel!" width='400px'/>
+                <div className="banner-img" >
+                  <img className="banner-img" src={banner} alt="Travel!" width='400px'/>
+                </div>
               </div>
             </div>
             <div className="promo">
