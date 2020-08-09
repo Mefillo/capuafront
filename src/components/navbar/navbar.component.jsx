@@ -12,7 +12,6 @@ class NavBar extends React.Component {
   }
 
   Menu = (props) => {
-    console.log(props, window.innerWidth)
     if (window.innerWidth > 700) {
       return (
         <div className="menu-s" >
@@ -42,7 +41,7 @@ class NavBar extends React.Component {
         <div className="up">
           <a id = 'redirect' href='../' style={{ padding: '0px' }}>
             <div className="logo">
-              <div id="logotype"><img src={logo} alt="" onClick={() => console.log(window.screen.width)}/></div><p>Capua</p>
+              <div id="logotype"><img src={logo} alt=""/></div><p>Capua</p>
             </div>
           </a>
           <div className="box" onClick={() => {
