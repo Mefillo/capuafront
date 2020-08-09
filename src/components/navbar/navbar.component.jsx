@@ -46,7 +46,6 @@ class NavBar extends React.Component {
           </a>
           <div className="box" onClick={() => {
             this.setState({ toggled: !this.state.toggled })
-            console.log(this.state.toggled)
           }}>
             <img src={box} alt=""/>
           </div>
