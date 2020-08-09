@@ -12,7 +12,6 @@ const override = css`
 `
 
 const Loader = (props) => {
-  console.log(props)
   return (
     <div className='center'>
       <div className="sweet-loading">
