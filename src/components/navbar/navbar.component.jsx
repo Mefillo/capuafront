@@ -11,8 +11,9 @@ class NavBar extends React.Component {
     }
   }
 
-  Menu = () => {
-    if (window.screen.width > 700) {
+  Menu = (props) => {
+    console.log(props, window.innerWidth)
+    if (window.innerWidth > 700) {
       return (
         <div className="menu-s" >
           <ul>
@@ -24,8 +25,8 @@ class NavBar extends React.Component {
       )
     } else {
       return (
-        <div className={this.state.toggled ? 'menu untoggled' : 'menu toggled'} >
-          <ul className={this.state.toggled ? 'untoggled' : 'toggled'}>
+        <div className={props.toggled ? 'menu untoggled' : 'menu toggled'} >
+          <ul className={props.toggled ? 'untoggled' : 'toggled'}>
             <a href="../"><li>Shop</li></a>
             <a href="../about/"><li>About</li></a>
             <a href="../contact/"><li>Contact us</li></a>
@@ -39,16 +40,19 @@ class NavBar extends React.Component {
     return (
       <div className="navbar">
         <div className="up">
-          <a id = 'redirect'style={{ padding: '0px' }}>
+          <a id = 'redirect' href='../' style={{ padding: '0px' }}>
             <div className="logo">
               <div id="logotype"><img src={logo} alt="" onClick={() => console.log(window.screen.width)}/></div><p>Capua</p>
             </div>
           </a>
-          <div className="box" onClick={() => this.setState({ toggled: !this.state.toggled })}>
+          <div className="box" onClick={() => {
+            this.setState({ toggled: !this.state.toggled })
+            console.log(this.state.toggled)
+          }}>
             <img src={box} alt=""/>
           </div>
         </div>
-        <this.Menu/>
+        <this.Menu toggled={this.state.toggled}/>
 
       </div>
     )
