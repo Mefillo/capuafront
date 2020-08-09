@@ -101,12 +101,10 @@ class WDetailedProduct extends React.Component {
                   <ColorPanel colors = {this.state.product.colors}/>
                 </div>
               </div>
-              <form action={this.state.product.link} method="get" target="_blank">
-                <button className='btn-amazon'>See on Amazon</button>
-              </form>
-              <form action="../" method="get">
-                <button className="btn-amazon back">Back to Shop</button>
-              </form>
+              <div className="btns">
+                <a href={this.state.product.link} rel="noopener noreferrer" target="_blank" className='btn-amazon'>See on Amazon</a>
+                <a href="../" rel="noopener noreferrer" className="btn-amazon back">Back to Shop</a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,3 +1,50 @@
 .btn-amazon{
     border: none;
 }
+.btns{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-amazon{
+    cursor: pointer;
+    outline:0;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 25px;    
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #fdaa2e;
+    &:hover{
+        background-color: #f89500;
+    }
+    @media (max-width:700px){
+        padding-top: 33px;
+        margin:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+}
+    &.homepage{
+        width: auto;
+        height: auto;
+        padding: 20px 50px;
+        font-size: 20px;
+        margin-top: 100px;
+        margin-bottom: 80px;
+        margin-right: 100px;
+        @media (max-width: 600px){margin: 30px 0 50px;}
+    
+    }
+}
+    .back{
+        padding-top: 33px;
+        background-color: #222222;
+        color: #fdaa2e;
+        &:hover{
+            color: #fdc065;
+            background-color: #2f2f2f;
+        }
+    }

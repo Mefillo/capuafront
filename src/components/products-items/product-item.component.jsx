@@ -43,9 +43,7 @@ class Product extends Component {
             </a>
 
           </div>
-          <form action={link} method="get" target="_blank">
-            <button className="btn-amazon">See on Amazon</button>
-          </form>
+          <a href={link} className='btn-amazon homepage' rel="noopener noreferrer" target="_blank">See on Amazon</a>
 
         </div>
       </>
